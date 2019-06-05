@@ -1,0 +1,294 @@
+/* 
+
+COMPLETAR O CÓDIGO PREENCHENDO CADA SELETOR 
+DE ACORDO COM O ARQUIVO STYLE_CSS_COMPLETO.PDF
+
+*/
+
+body /* Corpo do site que nao alterará a margem nem o preenchimento. Alterando a cor de fundo, imagem da cor fundo, repetindo a cor de fundo posição de fundo, tamanho da fonte, família da fonte e cor*/
+{
+    margin: 0px; 
+    padding: 0px; 
+    background-color: #e6f7ff; 
+    background-image: url(images/spa1.jpg); 
+    background-repeat: repeat-x; 
+    background-position: left top; 
+    font-size: 13px; 
+    font-family: verdana, arial, sans-serif; 
+    color: #212121; 
+    
+    
+}
+h1, h2, h3 /* Títulos, que são divididos em níveis de cabeçalho de 1 2 e 3*/
+{
+margin-top: 0px; /* alterando a margem superior*/
+}
+h1 
+{
+font-size: 2.4em;     /*tamanho da fonte*/                                                                   
+}
+h2 
+{
+font-size: 1.8em; /*tamanho da fonte*/
+}
+h3
+{
+font-size: 1.4em; /*tamanho da fonte*/
+}
+p, ol, ul /* Parágrafos, ordenados e não ordenados */
+{
+    margin-bottom: 1.8em; /*margem inferior*/
+    line-height: 160%; /*altura da linha*/
+}
+
+a /* ancora */
+{
+    color: #0066FF; /*cor*/
+}
+a:hover /* ancora hiperlink over, passa o mouse em cima do link, muda o estado do elemento */
+{
+    text-decoration: none; /*texto decorado*/
+    color: #FF0000; /*cor*/
+}
+a img /* ancora numa imagem */
+{
+    border: none; /*borda*/
+}
+#header /* #identidade é uma ID, é uma div header */ 
+{
+    width: 900px; /*largura*/
+    height: 130px; /*altura*/
+    margin: 0px auto; /*margem*/
+    background: #ffffff; /* cor de fundo*/
+}
+#header a /* identidade é uma ID, é uma div header com ancora */
+{
+    text-decoration: none; /*texto decorado*/
+    color: #004d00; /*cor*/
+}
+#logo /* logotipo da página que ira flutuar*/
+{
+    float: left; /*flutuar*/
+    background: url(images/spa2.jpg) no-repeat left top; /*imagem de fundo nao repetir no topo a esquerda*/
+    padding-left: 70px; /*preencher a esquerda*/
+}
+#logo h1, #logo p /* identidade do logotipo do cabeçalho 1 e identidade do logotipo do parágrafo */
+{
+    margin: 0px; /*margem*/
+    line-height: normal; /*altura da linha*/
+    font-weight: normal; /*espessura da fonte*/
+    color: #004d00; /*cor*/
+    
+}
+
+#logo h1 /* parágrafo */
+{
+    padding: 25px 0px 0px 0px; /*preenchimento*/
+}
+
+/* Menu */
+
+#menu /* Identidade do navegador */
+{
+    float: right; /*flutuar a direita*/
+    background: #66d9ff; /*cor de fundo*/
+    border-top: 2px #3399FF solid; /*borda superior*/
+    margin: 30 px 0 0 0; /*margem*/
+    
+}
+
+#menu ul /* Identidade do navegador sem lista ordenada*/
+{
+    margin: 0px 0 0 0; /*margem*/
+    padding: 0px 0px 0px 0px; /*preenchimento*/
+    list-style: none; /*lista de estilo*/
+    line-height: normal; /*altura da linha*/
+}
+
+#menu li /*identidade do navegador com lista ordenada*/
+{
+    float: left; /*flutuar a esquerda*/
+    margin: 0px 0px 0px 1px; /*margem*/
+}
+
+#menu a /* identidade do navegador ancora */
+{
+    display: block; /*bloco de exibição*/
+    width: auto; /*largura automatica*/
+    height: 28px; /*altura*/
+    padding: 12px 20px 0px 20px; /*preenchimento*/
+    background: url(images/img02.jpg) no-repeat right 50%; /*cor de fundo da imagem*/
+}
+
+#menu a:hover /* identidade navegador, passar o mouse em cima do link*/
+{
+    text-decoration: underline; /*texto decorado */
+}
+
+#menu .first /*identidade navegador primeira classe*/
+{
+    background: none; /*cor de fundo*/
+}
+
+#menu .ative a /* identidade do navegador classe para estilizar o link ativo. A é o seletor ativo pode ser usado em todos os elementos, não apenas links.*/
+{
+/*formatação pessoal*/    
+
+}
+
+/* Page */
+
+#page /* identidade da página*/
+{
+    width: 900px; /*largura*/
+    margin: 0px auto; /*margem*/
+    padding: 30px 0px; /*preenchimento*/
+}
+
+/*Content */
+{
+    float: right; /*flutuar a direita*/
+    width: 570px; /*largura*/
+}
+
+.post /*usa o ponto para criar classe, post */
+{
+    margin: 0px 0px 30px 0px; /*margem*/
+}
+
+.post .title /* esse elemento que é um post dentro do title*/
+{
+    margin: 0px; /*margem*/
+    padding: 0px 0px 5px 0px; /*preenchimento*/
+    border-bottom: #3399FF solid 1px; 
+    color: #232F01;
+}
+
+.post .title a /*classe post classe título ancora/*
+{
+    color: #3399FF; /*cor*/
+}
+
+.post .entry /* classe post class de entrada*/
+{
+/*formatar no final, se necessário*/
+    
+}
+
+.post .meta /*classe de post classe de meta*/
+{
+    font-weight: bold; /*espessura da fonte*/
+}
+
+.post .byline /* classe post class por linha*/
+{
+    margin: 0px; /*margem*/
+}
+
+/*sidebar */ /*barra lateral*/
+
+#sidebar /* identidade barra lateral*/
+{
+    float: left; /*flutuar a esquerda*/
+    width: 300px; /*largura*/
+}
+
+#sidebar-bgtop /* identidade do fundo superior da barra lateral*/
+{
+   height: 3px; /*altura*/
+}
+
+#siderbar-bgbtm /* identidade que altera a altura da barra lateral*/
+{
+    height: 3px;
+}
+
+#sidebar-content /* alterar conteudo da barra lateral de preenchimento*/
+{
+    padding: 20px;
+}
+
+#sidebar ul /*  alterar a barra lateral da lista nao ordenada, tirando a margem, o preenchimento e a linha de estilo*/
+{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+#sidebar li ul /*  lista ordenada e nao ordenada da barra lateral com margem de 1.8em, preenchimento a esquerda de 20 px e sem linha de estilo*/
+{
+    margin-bottom: 1.8em;
+    padding-left: 20px;
+    list-style: none;
+}
+
+#sidebar h2 /* identidade cabeçalho da barra lateral com preechimento 4px 20px, cor de fundo verde, e cor branco */ 
+{
+    padding: 4px 20px;
+    background: #3399FF;
+    font-size: 1.2em;
+    color: #FFFFFF;
+}
+
+#sidebar a /* identidade da barra lateral ancora sem texto decorado e cor verde lodo.*/
+{
+    text-decoration: none;
+    color: #232F01;
+}
+
+#sidebar a:hover /*link que muda o estado do elemento na identidade lateral com texto grifado*/ 
+{
+    text-decoration: underline;
+}
+
+/* Search */
+
+#search /*pesquisa*/
+{
+
+    /*formatar no final, se necessário*/
+}
+
+#search form /* formulário de pesquisa, que altera margem de 1.8em e sem preenchimento*/
+{
+    margin-bottom: 1.8em;
+    padding: 0px;
+}
+
+#search fieldset /* campo de pesquisa que nao ira alterar margem, preenchimento e borda*/
+{
+    margin: 0px;
+    padding: 0px;
+    border: none;
+}
+
+#search #s /*alterar campo de pesquisa, apenas a altura*/
+{
+    width: 160px;
+}
+
+/* Footer */ /*rodapé*/
+
+#footer /* rodapé irá limpar ambos, alterando a largura, altura, margem, cor e cor de fundo.*/
+{
+    clear: both;
+    width: 900px;
+    height: 50px;
+    margin: 0px auto 30px auto;
+    color: #FFFFFF;
+    background: #3399FF;
+}
+
+#footer p /* alterar rodapé do parágrafo, sem mexer na margem, e sim no preenchimen, centranlizando o alinhamento do texto, altura da linha e tamanho da fonte.*/
+{
+    margin: 0px;
+    padding: 19px 0px 0px 0px;
+    text-align: center;
+    line-height: normal;
+    font-size: smaller;
+}
+
+#footer a /*alterar a cor do rodapé da ancora*/
+{
+    color: #FFFFFF;
+}
